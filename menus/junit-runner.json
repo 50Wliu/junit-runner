@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Run JUnit tests",
+        "command": "junit-runner:run"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "JUnit Runner",
+          "submenu": [
+            {
+              "label": "Run",
+              "command": "junit-runner:run"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
