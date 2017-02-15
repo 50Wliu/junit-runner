@@ -2,26 +2,16 @@
 
 // import JunitRunner from '../lib/junit-runner';
 
-describe('JunitRunner', () =>
+xdescribe('JunitRunner', () =>
 {
 	let workspaceElement, activationPromise;
 
-	beforeEach(() =>
-	{
-		workspaceElement = atom.views.getView(atom.workspace);
-		activationPromise = atom.packages.activatePackage('junit-runner');
-	});
+	beforeEach(() => { activationPromise = atom.packages.activatePackage('junit-runner'); });
 
 	describe('when the junit-runner:run event is triggered', () =>
 	{
-		it('hides and shows the modal panel', () =>
+		it('attempts to compile the Java file and run JUnit tests', () =>
 		{
-			// Before the activation event the view is not on the DOM, and no panel
-			// has been created
-			expect(workspaceElement.querySelector('.junit-runner')).not.toExist();
-
-			// This is an activation event, triggering it will cause the package to be
-			// activated.
 			atom.commands.dispatch(workspaceElement, 'junit-runner:run');
 
 			waitsForPromise(() => { return activationPromise; });
