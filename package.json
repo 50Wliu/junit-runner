@@ -26,6 +26,16 @@
       "description": "Classpath to use when compiling and running.",
       "default": "",
       "type": "string"
+    },
+    "javaArgs": {
+      "description": "Arguments to pass to the `java` process.",
+      "default": "",
+      "type": "string"
+    },
+    "javacArgs": {
+      "description": "Arguments to pass to the `javac` process.",
+      "default": "",
+      "type": "string"
     }
   }
 }
