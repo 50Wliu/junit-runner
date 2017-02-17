@@ -1,6 +1,6 @@
 {
   "context-menu": {
-    "atom-text-editor": [
+    "atom-text-editor[data-grammar='source java']": [
       {
         "label": "Run JUnit tests",
         "command": "junit-runner:run"

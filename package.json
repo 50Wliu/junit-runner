@@ -10,7 +10,7 @@
     "test"
   ],
   "activationCommands": {
-    "atom-text-editor": "junit-runner:run"
+    "atom-text-editor[data-grammar='source java']": "junit-runner:run"
   },
   "repository": "https://github.com/50Wliu/junit-runner",
   "license": "MIT",
