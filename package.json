@@ -25,17 +25,32 @@
     "classpath": {
       "description": "Classpath to use when compiling and running.",
       "default": "",
-      "type": "string"
+      "type": "string",
+      "order": 1
+    },
+    "javaExecutable": {
+      "description": "Executable to call for the `java` command.",
+      "default": "java",
+      "type": "string",
+      "order": 2
     },
     "javaArgs": {
       "description": "Arguments to pass to the `java` process.",
       "default": "",
-      "type": "string"
+      "type": "string",
+      "order": 3
+    },
+    "javacExecutable": {
+      "description": "Executable to call for the `javac` command.",
+      "default": "javac",
+      "type": "string",
+      "order": 4
     },
     "javacArgs": {
       "description": "Arguments to pass to the `javac` process.",
       "default": "",
-      "type": "string"
+      "type": "string",
+      "order": 5
     }
   }
 }
